@@ -5,7 +5,10 @@ HOW TO USE?
 2. update all information in config.json
 3. Execute GmailManager.py
 4. view_labels command can be used to get label id; Information is used in config.json
-5. For back box usage just focus on config.json file;Don't touch the remaing code
+5. For back box usage just focus on config.json file;Don't touch the remaining code
+6. NOTE IMPORTANT:
+    if you DONT exit from application by giving bye command; DOWNLOADS won't be saved
+7. Feel free to suggest me changes.
 
 EXPLANATION OF config.json
 
@@ -24,3 +27,30 @@ EXPLANATION OF config.json
 USAGE?
 You are free to use the code, my main aim is to gain knowledge.
 Please share if you learn anything new as well.
+
+SNAP of SAMPLE EXECUTION:
+
+/home/arnab/anaconda3/bin/python /home/arnab/PycharmProjects/GmailOlaInvoice/GmailEngine/GmailManager.py
+Welcome to Google Manager 1.0
+GmailManager>bank_download
+Using query:  from:hdfcbanksmartstatement@hdfcbank.net after:2018/01/01
+ID:from:subject:date:attachment
+-------------------------------
+161e1a11fc54845b:HDFC Bank Smart Statement <hdfcbanksmartstatement@hdfcbank.net>:Email Account Statement of your HDFC Bank Account ***0719 for the period 01-Feb-2018 TO 28-Feb-2018:Thu, 1 Mar 2018 17:49:52:True
+161c4e1e0705d4cf:HDFC Bank Smart Statement <hdfcbanksmartstatement@hdfcbank.net>:Email Account Statement of your HDFC Bank Account ***7219 for the period 24-Jan-2018 TO 23-Feb-2018:Fri, 23 Feb 2018 04:15:04:True
+161505a5d1b4770f:HDFC Bank Smart Statement <hdfcbanksmartstatement@hdfcbank.net>:Email Account Statement of your HDFC Bank Account ***0719 for the period 01-Jan-2018 TO 31-Jan-2018:Thu, 1 Feb 2018 12:43:18:True
+161257f889f584f2:HDFC Bank Smart Statement <hdfcbanksmartstatement@hdfcbank.net>:Email Account Statement of your HDFC Bank Account ***7219 for the period 24-Dec-2017 TO 23-Jan-2018:Tue, 23 Jan 2018 05:27:03:True
+160b952fb762632f:HDFC Bank Smart Statement <hdfcbanksmartstatement@hdfcbank.net>:Email Account Statement of your HDFC Bank Account ***0719 for the period 01-Dec-2017 TO 31-Dec-2017:Tue, 2 Jan 2018 05:16:50:True
+160b3db1b0592cde:HDFC Bank Smart Statement <hdfcbanksmartstatement@hdfcbank.net>:Email Account Statement of your HDFC Bank Account ***0719 for the period 01-Dec-2017 TO 31-Dec-2017:Mon, 1 Jan 2018 03:44:32:True
+-------------------------------
+Total 6 messages in label Label_6
+Downloading:  5020XXXXXX0719_a04d7b8b_01Feb2018_TO_28Feb2018_163639966.pdf
+Downloading:  0500XXXXXX7219_bb4f9386_24Jan2018_TO_23Feb2018_035855236.pdf
+Downloading:  5020XXXXXX0719_5a64cb59_01Jan2018_TO_31Jan2018_120257859.pdf
+Downloading:  0500XXXXXX7219_a4a4c888_24Dec2017_TO_23Jan2018_045058923.pdf
+Downloading:  5020XXXXXX0719_e542f084_01Dec2017_TO_31Dec2017_032935949.pdf
+Downloading:  5020XXXXXX0719_284e6599_01Dec2017_TO_31Dec2017_032337056.pdf
+GmailManager>bye
+Exiting Gmail Manager
+
+Process finished with exit code 0

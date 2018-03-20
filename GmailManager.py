@@ -8,8 +8,8 @@ cmd_list = {"bye":"\n   To exit utility\n"}  # dictionary to store function util
 CONFIG = r"config.json"  # path of config file
 
 
-def function_name(func):
-    cmd_list[func.__name__] = func.__doc__
+def function_name(func): # Function used as decorator to store command name
+    cmd_list[func.__name__] = func.__doc__  # Brief of method is written in doc string of each function
     return func
 
 
@@ -24,7 +24,7 @@ def bank_download():
         STORE = json_data.get("STORE")
         LABEL = json_data.get("BANK").get("LABEL")
         msg_ids = GmailMaster(CONFIG).view_messages(LABEL, QUERY)
-        if len(msg_ids) != 0:
+        if len(msg_ids) != 0:  # checking for data present or not
             GmailMaster(CONFIG).download_attachment(msg_ids,STORE)
         else:
             pass
@@ -50,7 +50,7 @@ def ola_download():
         STORE = json_data.get("STORE")
         LABEL = json_data.get("OLA").get("LABEL")
         msg_ids = GmailMaster(CONFIG).view_messages(LABEL, QUERY)
-        if len(msg_ids) != 0:
+        if len(msg_ids) != 0:  # checking for data present or not
             GmailMaster(CONFIG).download_attachment(msg_ids,STORE)
         else:
             pass
@@ -66,6 +66,9 @@ def view_labels():
 
 
 def input_router():
+    '''
+    Function for routing commands
+    '''
     welcome = "Welcome to Google Manager 1.0"
     prompt = "GmailManager>"
     exit = "bye"
