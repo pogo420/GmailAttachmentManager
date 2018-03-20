@@ -1,0 +1,9 @@
+SCRIPTS are used to download attachments from gmail.
+
+HOW TO USE?
+1. Download your client_secret key
+2. update all information in config.json
+3. Execute GmailManager.py
+
+Future plan:
+Working on message to pdf
