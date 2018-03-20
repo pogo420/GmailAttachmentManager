@@ -10,7 +10,6 @@ import os.path
 from apiclient import discovery
 
 
-
 class GmailMaster(object):
 
     def __init__(self,config):
@@ -156,6 +155,7 @@ if __name__ == "__main__":
     #GmailMaster(CONFIG).view_messages("Label_6")
     #print(GmailMaster(CONFIG).view_messages("INBOX"))
     #GmailMaster(CONFIG).testing("Label_6")
-    GmailMaster(CONFIG).testing("INBOX")
+    #GmailMaster(CONFIG).testing("INBOX")
     #GmailMaster(CONFIG).download_attachment(["15446a1a2cfa0410"],STORE)
     #print(GmailMaster(CONFIG).view_messages("Label_6",QUERY))
+    pass

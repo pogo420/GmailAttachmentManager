@@ -4,6 +4,23 @@ HOW TO USE?
 1. Download your client_secret key
 2. update all information in config.json
 3. Execute GmailManager.py
+4. view_labels command can be used to get label id; Information is used in config.json
+5. For back box usage just focus on config.json file;Don't touch the remaing code
 
-Future plan:
-Working on message to pdf
+EXPLANATION OF config.json
+
+{
+  "SCOPES":"https://www.googleapis.com/auth/gmail.readonly",
+  "CLIENT_SECRET_FILE":"path of google OAuth key",
+  "APPLICATION_NAME":"Gmail API Python Quickstart",
+  "STORE":"path to save the attachment",
+  "BANK":{"QUERY":"from:hdfcbanksmartstatement@hdfcbank.net after:2018/03/01",
+          "LABEL":label_id ,example:"Label_6"},
+  "OLA":{"QUERY":"from:noreply@olacabs.com after:2018/01/01 before:2018/01/31",
+          "LABEL":"INBOX"}
+}
+
+
+USAGE?
+You are free to use the code, my main aim is to gain knowledge.
+Please share if you learn anything new as well.
