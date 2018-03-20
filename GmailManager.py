@@ -4,8 +4,8 @@ from json import load
 
 
 cmd_list = {}  # dictionary to store function utility.
-CONFIG = r"../Credentials/config.json"  # path of config file
-
+#CONFIG = r"../Credentials/config.json"  # path of config file
+CONFIG = r"config.json"
 
 def function_name(func):
     cmd_list[func.__name__] = func.__doc__
@@ -21,7 +21,7 @@ def bank_download():
         if len(msg_ids) != 0:
             GmailMaster(CONFIG).download_attachment(msg_ids,STORE)
         else:
-            pass
+  gi          pass
 
 def ola_download():
     with open(CONFIG) as f:

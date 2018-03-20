@@ -1,0 +1,10 @@
+{
+  "SCOPES":"https://www.googleapis.com/auth/gmail.readonly",
+  "CLIENT_SECRET_FILE":"../Credentials/client_secret.json",
+  "APPLICATION_NAME":"Gmail API Python Quickstart",
+  "STORE":"../OutputDir",
+  "BANK":{"QUERY":"from:hdfcbanksmartstatement@hdfcbank.net after:2018/03/01",
+          "LABEL":"Label_6"},
+  "OLA":{"QUERY":"from:noreply@olacabs.com after:2018/01/01 before:2018/01/31",
+          "LABEL":"INBOX"}
+}
